@@ -1,44 +1,50 @@
-#include "main.h"                                                                                                                    
+#include "main.h"
+/**
 
-                                                                                                                                     
+ * _strcat - concatenates two strings,
 
-/**                                                                                                                                  
+ * @dest: destination.
 
- * strcat - Concatenates the string pointed to by @src, including the x                                                     
+ * @src: source.
 
- *          null byte, to the end of the string pointed to by @dest.                                                                 
+ * Return: the pointer to dest.
 
- * @dest: A pointer to the string to be concatenated upon.                                                                           
+ */
 
- * @src: The source string to be appended to @dest.                                                                                  
+char *_strcat(char *dest, char *src)
 
- *                                                                                                                                   
+{
 
- * Return: A pointer to the destination string @dest.                                                                                
+	int count = 0, count2 = 0;
 
- */                                                                                                                                  
 
-char *_strcat(char *dest, const char *src)                                                                                            
 
-{                                                                                                                                    
+	while (*(dest + count) != '\0')
 
-        int index = 0, dest_len = 0;                                                                                                 
+	{
 
-                                                                                                                                     
+		count++;
 
-        while (dest[index++])                                                                                                        
+	}
 
-                dest_len++;                                                                                                          
 
-                                                                                                                                     
 
-        for (index = 0; src[index]; index++)                                                                                         
+	while (count2 >= 0)
 
-                dest[dest_len++] = src[index];                                                                                       
+	{
 
-                                                                                                                                     
+		*(dest + count) = *(src + count2);
 
-        return (dest);                                                                                                               
+		if (*(src + count2) == '\0')
+
+			break;
+
+		count++;
+
+		count2++;
+
+	}
+
+	return (dest);
 
 }
-
