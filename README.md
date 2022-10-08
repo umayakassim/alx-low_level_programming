@@ -7,3 +7,4 @@
 6.	Write a function that capitalizes all words of a string.
 7.	Write a function that encodes a string into 1337.
 
+# 0x06-pointers_arrays_strings
