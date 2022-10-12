@@ -44,4 +44,7 @@ int _strcmp(char *s1, char *s2)
 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> e2d3a2f8612df08eae86312cb22ecf00ac03b03c
