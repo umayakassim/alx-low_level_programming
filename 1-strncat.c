@@ -2,14 +2,15 @@
 #include <string.h>
 
 /**
- *   _strncat -> function to append some charx
- *   @dest:first param
- *   @src: second param
- *   @n:3rd param
- *   Return: string
+ * _strncat - append char
+ * @dest: param 1
+ * @src: param 2
+ * @n: param 3
+ *
+ * Return: string
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	strncat(*dest, *src, n);
+	strncat(dest, src, n);
 	return (dest);
-}	
+}
