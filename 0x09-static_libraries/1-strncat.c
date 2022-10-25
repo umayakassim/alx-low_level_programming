@@ -1,5 +1,5 @@
 
-#include "main.h"
+#include "holberton.h"
 
 /**
 * _strncat - Concatenates two strings

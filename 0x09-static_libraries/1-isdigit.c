@@ -1,4 +1,4 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
 * _isdigit - Checks if c is digit between 0 to 9
