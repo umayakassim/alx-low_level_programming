@@ -1,18 +1,21 @@
+/*
+ * File: 5-free_dog.c
+ * Author: 5-free_dog.c
+ */
+
 #include "dog.h"
 #include <stdlib.h>
 
 /**
-* free_dog - frees memory allocation
-* @d: pointer to struct dog
-*
-* Return: no return
-*/
+ * free_dog - a function that frees dogs.
+ * @d: The dog to be freed.
+ */
 void free_dog(dog_t *d)
 {
-	if (d)
-	{
-		free((*d).name);
-		free((*d).owner);
-		free(d);
-	}
+	if (d == NULL)
+		return;
+
+	free(d->owner);
+	free(d->name);
+	free(d);
 }
