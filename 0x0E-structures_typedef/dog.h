@@ -3,7 +3,7 @@
 
 /*
  * File: dog.h
- * Author:Vincent Okoth
+ * Author:Umaya Kassim
  * Desc: A file that defines a new type struct dog.
  */
 

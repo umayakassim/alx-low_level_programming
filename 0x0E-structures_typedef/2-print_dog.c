@@ -1,6 +1,6 @@
 /*
  * File: 2-print_dog.c
- * Author: Vincent Okoth
+ * Author: Umaya Kassim
  */
 
 #include "dog.h"

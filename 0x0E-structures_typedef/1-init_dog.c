@@ -1,6 +1,6 @@
 /*
  * File: 1-init_dog.c
- * Author: Vincent okoth
+ * Author: Umaya Kassim
  */
 
 #include "dog.h"

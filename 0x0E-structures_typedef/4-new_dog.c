@@ -1,6 +1,6 @@
 /*
  * File: 4-new_dog.c
- * Author: Vincent Okoth
+ * Author: Umaya Kassim
  */
 
 #include "dog.h"
