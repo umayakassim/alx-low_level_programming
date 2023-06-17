@@ -1,13 +1,22 @@
-school: main.o utils.o
-    gcc main.o utils.o -o school
+# Makefile for building the "school" executable
 
-main.o: main.c
-    gcc -c main.c
+# Compiler
+CC = gcc
 
-utils.o: utils.c
-    gcc -c utils.c
+# Source files
+SRC = main.c file1.c file2.c
 
-all: school
+# Object files
+OBJ = $(SRC:.c=.o)
 
+# Default rule to build the executable
+all: $(OBJ)
+	$(CC) $(OBJ) -o school
+
+# Rule to build object files
+%.o: %.c
+	$(CC) -c $< -o $@
+
+# Clean rule to remove object files and the executable
 clean:
-    rm -f school *.o
+	rm -f $(OBJ) school
